@@ -90,12 +90,8 @@ plt.show()
   - Training loss vs validation loss is plotted over epochs to understand if the model overfits.
   - Helps determine the best epoch count for optimal performance.
 - A **line plot** visualizes how validation accuracy changes with different configurations, helping identify the best-performing setup.
-# README: CNN Hyperparameter Analysis
 
-## Overview
-This project trains a Convolutional Neural Network (CNN) on the **Fashion MNIST dataset** using different hyperparameter configurations. The aim is to analyze how variations in **filter size, regularization, batch size, and optimizer** affect validation accuracy.
-
-## Key Observations
+## My Comments
 
 ### 1. Adam Optimizer Performs Better than SGD
 - The curves corresponding to `Opt=adam` consistently reach **higher validation accuracy** compared to `Opt=sgd`.
@@ -109,7 +105,7 @@ This project trains a Convolutional Neural Network (CNN) on the **Fashion MNIST 
 - **Larger batch size (64)** stabilizes training but may lead to **slightly lower validation accuracy** compared to batch size 32.
 - **Smaller batch size (32)** allows for more weight updates per epoch, which can help generalization.
 
-## 5.Best Performing Configuration
+### 5.Best Performing Configuration
 Based on the validation accuracy trends, the best-performing models have:
  **Filter Size = 5**  
  **Regularization = 0.0001**  
